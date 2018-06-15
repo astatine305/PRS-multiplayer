@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="chatApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../RPS-multiplayer/assets/css/style.css">
+    <title>RPS - Multiplayer</title>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+      
+    </script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body ng-controller="chatController">
+    <div id="container"> <!-- start container --> 
+
+    <form id="newPlayer">
+        <input class="newPlayerName" type="text" placeholder="Enter Your Name"></input>
+        <button id="newPlayerBtn">Start</button>
+    </form>
+    
+    <div class="topRow">
+        <div id="playerOneName" class="name">Player One Name</div>
+        <div id="playerOneScore" class="score">Player One Score</div>
+        <div id="playerTwoScore" class="score">Player Two Score</div>
+        <div id="playerTwoName" class="name">Player Two Name</div>
+    </div>
+
+
+    <div id=gameBox>
+    <div id="displayP1">
+        
+
+    </div>
+
+    <div id="gameDisplay"></div>
+
+    <div id="displayP2">
+       
+
+    </div>
+
+    <div id="playerOne">   
+            <div id="rockP1" class="P1">R</div>
+            <div id="paperP1" class="P1">P</div>
+            <div id="scissorP1" class="P1">S</div>
+
+    </div>
+    <div>
+
+    </div>
+    <div id="playerTwo">
+            <div id="rockP2" class="P2">R</div>
+            <div id="paperP2" class="P2">P</div>
+            <div id="scissorP2" class="P2">S</div>
+
+    </div>
+
+    </div>
+
+    <!-- Chat Box -->
+    <div id="chatBox">
+        <div id="chatLogs">
+
+            <div class="chat friend">
+                    <div class="friendName"></div>
+                    <p class="chatMessage">Hello world</p>
+            </div>
+            <div class="chat self">
+                    <div class="yourName"></div>
+                    <p class="chatMessage">hello!!</p>
+            </div>
+            <div class="chat friend">
+                    <div class="friendName"></div>
+                    <p class="chatMessage"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia atque minus quam provident libero, maxime ad, ipsam cum impedit, neque non sit reprehenderit veniam temporibus molestias magni accusamus soluta reiciendis?</p>
+            </div>
+            <div class="chat friend">
+                    <div class="friendName"></div>
+                    <p class="chatMessage">Hello world</p>
+                </div>
+                <div class="chat self">
+                    <div class="yourName"></div>
+                    <p class="chatMessage">hello!!</p>
+                </div>
+                <div class="chat friend">
+                    <div class="friendName"></div>
+                    <p class="chatMessage"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia atque minus quam provident libero, maxime ad, ipsam cum impedit, neque non sit reprehenderit veniam temporibus molestias magni accusamus soluta reiciendis?</p>
+                </div>
+
+        </div>
+        <div class="chatForm">
+            <textarea></textarea>
+            <button>Send</button>
+
+
+        </div>
+
+    </div>
+    
+
+
+    </div> <!-- end container --> 
+
+
+<script src="../RPS-multiplayer/assets/javascript/script.js"></script> 
+</body>
+</html>
